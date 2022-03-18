@@ -2,3 +2,12 @@
     justify-content: space-evenly;
 
 }
+.background{
+    background-image: url("./images/pizza back.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+.img{
+    text-align: center;
+}
