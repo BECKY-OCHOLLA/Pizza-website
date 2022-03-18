@@ -82,5 +82,13 @@ span{
     padding-top: 50px;
     
 }
+#speciality{
+    background-image: url("./images/pizzaback2.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    color: white;
+    text-align: center;
+}
 
     
