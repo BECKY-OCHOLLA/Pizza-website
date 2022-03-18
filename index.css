@@ -2,12 +2,21 @@
     justify-content: space-evenly;
 
 }
-.background{
-    background-image: url("./images/pizza back.jpeg");
+#background{
+    background-image: url("./images/pizzaback3.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
-}
-.img{
     text-align: center;
+}
+#img{
+    text-align: center;
+    padding-top: 100px;
+}
+.btn{
+    text-align: center;
+    border-radius: 10px;
+    padding: 10 20; 
+    background-color: brown;
+    color: white;
 }
