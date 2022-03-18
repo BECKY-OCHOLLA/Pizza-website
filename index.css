@@ -2,6 +2,14 @@
     justify-content: space-evenly;
 
 }
+
+#logo{
+    color: white;
+
+}
+span{
+    color: black;
+}
 #background{
     background-image: url("./images/pizzaback3.jpeg");
     background-size: cover;
@@ -57,3 +65,22 @@
     height: 50px;
     padding-top: 25px;
 }
+
+#about{
+    background-image: url("./images/about section.jpg");
+    background-size: cover;
+    height: 500px;
+    text-align: center;
+    color:white;
+    
+}
+span{
+    color: red;
+    font-size: 25px;
+}
+#pizza{
+    padding-top: 50px;
+    
+}
+
+    
