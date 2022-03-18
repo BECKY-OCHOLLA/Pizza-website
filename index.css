@@ -20,3 +20,9 @@
     background-color: brown;
     color: white;
 }
+#order{
+    padding-top: 100px;
+    width: 90%;
+    padding-left: 50px; 
+     /* ?height: 280px;  */
+}
