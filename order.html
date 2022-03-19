@@ -43,64 +43,105 @@
               
         </div>
     </nav>
-    <div class="container" id="form">
-        <div class="row">
-            <div class="col-md-7 col-12 col-sm-6">
-                <div class="card h-100 text-center">
-                    <div class="card-body">
-                      <h5 class="card-title">MAKE ORDER NOW</h5>
-                      <p class="card-text">
-                          <input type="text" id="fullname" type="Full Name" placeholder="Full Name">
-                      </p>
-                      <p>
-                          <input type="Telephone Number" id="mobilenumber" placeholder="Mobile Number">
-                      </p>
-                      <P>
-                        <select class="form-select form-select-sm" id="pizza-size" aria-label=".form-select-sm example">
-                            <option selected>pizza-size </option>
-                            <option value="Large">Large.........Sh.1000</option>
-                            <option value="Medium">Medium.........Sh.800</option>
-                            <option value="Small">Small.........Sh.550</option>
-                            
-                        </select>
-        
-                      </P>
-                      <p>
-                        <select class="form-select form-select-sm" id="pizza-crust" aria-label=".form-select-sm example">
-                            <option selected>Type of Crust</option>
-                            <option value="Cripsy">Cripsy.........Sh.100</option>
-                            <option value="Stuffed">Stuffed.........Sh.120</option>
-                            <option value="Gluten-free">Gluten-free.........Sh.50</option>
-                            
-                        </select>
-                      </p>
-                      <div class="toppings">
-                          <h6>Toppings</h6>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="pepperoni" />
-                            <label class="form-check-label" for="inlineCheckbox1">veggie Sh.
-                                100</label>
+
+    
+    <div id="order"></div>
+    <div class="order mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="card">
+                                <card-title>
+                                    <h3 class="pt-4 pl-5">MAKE YOUR ORDER NOW</h3>
+                                </card-title>
+                                <div class="card-body">
+                                    <div id="pizza">
+                                        
+                                    </div>
+                                    <form id="myform">
+                                        <div class="form-group">
+                                            <label for="pizza-size">Pizza Size</label>
+                                            <select class="form-select form-select-sm" id="pizza-size" aria-label=".form-select-sm example">
+                                                <option selected>pizza-size </option>
+                                                <option value="Large">Large.........Sh.1000</option>
+                                                <option value="Medium">Medium.........Sh.800</option>
+                                                <option value="Small">Small.........Sh.550</option>
+                                            </select>   
+                                     
+                                            
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pizza-crust">Choose crust</label>
+                                            <select class="form-select form-select-sm" id="pizza-crust" aria-label=".form-select-sm example">
+                                                <option selected>Type of Crust</option>
+                                                <option value="Cripsy">Cripsy.........Sh.100</option>
+                                                <option value="Stuffed">Stuffed.........Sh.120</option>
+                                                <option value="Gluten-free">Gluten-free.........Sh.50</option>
+                                                
+                                            </select>
+                                        </div>
+                                        <div class="toppings">
+                                            <h6>Toppings</h6>
+                                          <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="pepperoni" />
+                                              <label class="form-check-label" for="inlineCheckbox1">veggie Sh.
+                                                  100</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="veges" />
+                                              <label class="form-check-label" for="inlineCheckbox2">Traditional Sh.
+                                                  200</label>
+                                          </div>
+                                          <div class="form-check form-check-inline">
+                                              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="bacon" />
+                                              <label class="form-check-label" for="inlineCheckbox2"> Speciality Sh.
+                                                  250</label>
+                                          </div>
+                                      </div>
+                                        <button type="submit" class="btn-success btn mt-3" id="orderbtn">
+                                            Order now
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="veges" />
-                            <label class="form-check-label" for="inlineCheckbox2">Traditional Sh.
-                                200</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="bacon" />
-                            <label class="form-check-label" for="inlineCheckbox2"> Speciality Sh.
-                                250</label>
+                        <div class="col-md-4">
+                            <div class="card mt-1">
+                                <div class="card-title d-inline-flex">
+                                    <h3 class="p-4">view items and totals</h3>
+                                    <i class=totals><button class="btn-success btn ml-2" value="0" id="quantity"> </button></i>
+                                </div>
+                                <div class="card-body">
+                                    <table id="table">
+                                        <tr>
+                                            <td>Size</td>
+                                            <td>Crust</td>
+                                            <td>Toppings</td>
+                                            <td>Total Price</td>
+                                        </tr>
+                                    </table>
+
+                        
+                                        <div class="checkout">
+                                            <button class="btn-success btn m-4" data-toggle="modal" data-target="#exampleModalCenter" id="gettotal">
+                                                Checkout
+                                            </button>
+                                        </div>
+                                    </a>
+                                    <!-- </a> -->
+                                </div>
+                            </div>
                         </div>
                     </div>
-                      <a style="margin-top: 23%;" href="#" class="btn">ORDER NOW</a>
-                    </div>
-                    
-                    
-                   
                 </div>
             </div>
         </div>
     </div>
+
+    
+    
     <div class="footer">
         <p>Copyright ©2022, All Rights Reserved | Website Design: Becky's Creative</p>
 
@@ -108,7 +149,8 @@
     
 
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
     
     
         
