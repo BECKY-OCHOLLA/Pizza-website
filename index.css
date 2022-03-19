@@ -101,5 +101,12 @@ h3{
     font-size: 20px;
     color: rgb(155, 132, 5);
 }
+.toppings{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    border-color: maroon;
+    border: 10px;
+}
 
     
