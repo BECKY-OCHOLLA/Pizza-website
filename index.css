@@ -28,7 +28,7 @@ span{
     background-color: brown;
     color: white;
 }
-#order{
+#order1{
     padding-top: 100px;
     width: 90%;
     padding-left: 50px; 
@@ -108,7 +108,12 @@ h3{
     border-color: maroon;
     border: 10px;
 }
-#form{
+#order{
    background-image: url("./images/pizera.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 600px;
+   color: white;
+   font-size:  25px
 }
     
