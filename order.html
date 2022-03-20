@@ -44,43 +44,35 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container" id="container">
         <div class="row">
             <div class="col-md-9">
                 <div id="order-section"></div>
                 <h1 class="text-center pt-4"> ORDER NOW</h1>
-                <p>To buy more than one Pizza, and choose different toppings
-                </p>
-                <div class="alert alert-success mt-2" id="success">
-                    <P>We are glad to serve you!</P>
-                </div>
-                <div class="alert alert-success" id="no-delivery">
-                   <p>Welcome</p>
-                </div>
+                <p>To buy more than one Pizza, and choose different topping</p>
+            
                 <div class="row">
                     <div class="col-md-6">
                         <div class="card">
                             <card-title>
                                 <h3 class="pt-4 pl-5">choose your taste!</h3>
                             </card-title>
-                            <div class="card-body">
-                                <div id="pizza">
-                                 
-                                </div>
+                            <div class="card-body" id="pizza" >
+                                
                                 <form id="myform">
                                     <div class="form-group">
                                         <label for="pizza-size">Pizza Size</label>
                                         <select class="form-control" id="pizza-size">
-                                            <option value="small">Small -- ksh 600</option>
-                                            <option value="medium">Medium -- ksh 800</option>
-                                            <option value="large"> Large -- ksh 1200</option>
+                                            <option value="small">Small ....ksh 500</option>
+                                            <option value="medium">Medium ....ksh 800</option>
+                                            <option value="large"> Large .... ksh 1000</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
                                         <label for="pizza-crust">Which crust do you want</label>
                                         <select class="form-control" id="pizza-crust">
-                                            <option value="crispy">Crispy -- ksh 300</option>
-                                            <option value="stuffed">Stuffed -- ksh 200</option>
+                                            <option value="crispy">Crispy ....ksh 250</option>
+                                            <option value="stuffed">Stuffed ....ksh 200</option>
                                             <option value="gluten-free">
                                                 Gluten-free -- ksh 100</option>
                                         </select>
@@ -113,7 +105,7 @@
                     <div class="col-md-6">
                         <div class="card mt-1">
                             <div class="card-title d-inline-flex">
-                                <h3 class="p-4">View items in cart</h3>
+                                <h3 class="p-4">View items ordered</h3>
                                 <i ><button class="btn-success btn ml-2"
                                         value="0" id="quantity">
                                         0
@@ -122,12 +114,12 @@
                             <div class="card-body">
                                 <table id="table">
                                     <tr>
-                                        <td>Size</td><br>
-                                        <td id="td1">Crust</td><br>
-                                        <td id="td2">Toppings</td><br>
-                                        <td>Total Price</td>
-                                    </tr>
-                                </table>
+                                        <td id="td">Size</td>
+                                        <td id="td1">Crust</td>
+                                        <td id="td2">Toppings</td> 
+                                        <td id="td3">Total Price</td>
+                                        </tr>
+                                </table> 
 
                                 
 

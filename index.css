@@ -66,12 +66,12 @@ span{
     padding-top: 25px;
 }
 
-#about{
+#container{
     background-image: url("./images/pizera.jpg");
     background-size: cover;
-    height: 500px;
+    height: 700px;
     text-align: center;
-    color:white;
+    color:black;
     
 }
 span{
