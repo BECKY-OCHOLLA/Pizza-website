@@ -20,7 +20,7 @@ var toppingPrice = {
 };
 
 
-function Pizza(size, crust) {
+function pizza(size, crust) {
     this.size = size;
     this.crust = crust;
     this.toppings = [];
